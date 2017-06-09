@@ -1,0 +1,32 @@
+    <body>
+        <div class="header">
+            <div class="itens_menu esq">
+                <a href=@{HomeR} class="bege negrito"><p>Cadê o Livro?</p></a>
+            <div class="itens_menu dir">
+                <a href=@{LoginR} class="menu branco">Login</a>
+        <div id="home_top">
+            <img src=@{StaticR _Logo_png}>
+        <div class="welcome_msg">
+            <p class="txtcorrido">LIVROS CADASTRADOS</p>
+            <p class="txtcorrido">Esses são os livros cadastrados no sistema.</p>
+        <div class="divcinza">
+            <div class="content_area">
+                <table .informacoes cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Autor</th>
+                            <th>Genero</th>
+                            <th>Editora</th>
+                            <th>Instituicao</th>
+                            <th>Quantidade</th>
+                            
+                           
+                    $forall (Entity p livro, instituicao, genero) <- idNomes
+                        <tr>
+                            <td>#{livroTitulo livro}</td>
+                            <td>#{livroAutor livro}</td>
+                            <td>#{generoNome genero}</td>
+                            <td>#{livroEditora livro}</td>
+                            <td>#{instituicaoNome instituicao}</td>
+                            <td>#{livroQuantidade livro}</td>
+                <a href=@{HomeR}><p class="btn_direcoes">Voltar para a página inicial</p></a>        

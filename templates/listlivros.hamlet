@@ -1,0 +1,27 @@
+    <body>
+        <div class="header">
+            <div class="itens_menu esq">
+                <a href=@{HomeR} class="bege negrito"><p>Cadê o Livro?</p></a>
+            <div class="itens_menu dir">
+                <a href=@{LogoutR} class="menu branco">Logout</a>
+        <div id="home_top">
+            <img src=@{StaticR _Logo_png}>
+        <div class="welcome_msg">
+            <p class="txtcorrido">Cadê o Livro?</p>
+            <p class="txtcorrido">Esses são os livros cadastrados no sistema.</p>
+        <div class="divcinza">
+            <div class="content_area">
+                <table .informacoes cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Opções</th>
+                    $forall Entity aid livro <- listaLivro 
+                        <tr>
+                            <td>#{livroTitulo livro}</td>
+                            <td><a href=@{ExcluirLivroR $ aid} class="btn_direcoes">Excluir</a>
+                                <a href=@{UpdateLivroR $ aid} class="btn_direcoes">Atualizar</a>
+                            
+                <a href=@{InicioR}><p class="btn_direcoes">Voltar para a página inicial de usuario </p></a>   
+                
+                <a href=@{AdminR}><p class="btn_direcoes">Voltar para a página inicial de administrador</p></a>        
+       

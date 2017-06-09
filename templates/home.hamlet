@@ -1,0 +1,23 @@
+$doctype 5
+    <html>
+       <head>
+          <title>Cadê o livro?</title>
+        <body>
+            <div class="header">
+                <div class="itens_menu esq">
+                    <a href=@{HomeR} class="bege negrito"><p>CADÊ O LIVRO?</p></a>
+            
+            <div class="itens_menu dir">
+                <a href=@{LoginR} class="menu branco">Login</a>
+            <div id="home_top">
+                <img src=@{StaticR _Logo_png}>
+            
+            <div class="welcome_msg">
+                <p class="txtcorrido">Olá!</p>
+                <p class="txtcorrido">Aqui no <span class="HaskellLivro_citado">Cadê o Livro?</span> você vai encontrar uma busca de títulos de livros presentes nas principais faculdades da região da Baixada Santista.</p>
+                <p class="txtcorrido"> Faça sua pesquisa abaixo:</p>
+                
+                <form action=@{BooksR} enctype=#{enctype} method="POST">
+                    ^{widget}
+                    <button type="submit">Buscar</button>
+              

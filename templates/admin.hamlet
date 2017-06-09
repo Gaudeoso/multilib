@@ -1,0 +1,26 @@
+$doctype 5
+    <html>
+       <head>
+          <title>Cadê o Livro?</title>
+        <body>
+            <div class="header">
+                <div class="itens_menu esq">
+                    <a href=@{HomeR} class="bege negrito"><p>Cadê o Livro?</p></a>
+                
+            <div class="itens_menu dir">
+                <a href=@{LogoutR} class="menu branco">Logout</a>
+            <div id="home_top">
+                <img src=@{StaticR _Logo_png}>
+            
+            <div class="welcome_msg">
+                <p class="txtcorrido">Olá, Admin!</p>
+                <p class="txtcorrido">Você tem as seguintes opções disponíveis:</p>
+                <a href=@{UsuarioR} class="opcao_admin">Cadastrar Usuários</a>
+                <a href=@{GerenciarBooksR} class="opcao_admin">Gerenciar Livros</a>
+                <a href=@{UsuariosR} class="opcao_admin">Gerenciar Usuários</a>
+                <a href=@{GerenciarInstituicaoR} class="opcao_admin">Gerenciar Instituicao</a>
+                <a href=@{CadastroInR} class="opcao_admin">Cadastrar Instituicao</a>
+                <a href=@{CadastroGenR} class="opcao_admin">Cadastrar Genero</a>
+                <a href=@{GerenciarGeneroR} class="opcao_admin">Gerenciar Genero</a>
+                
+                

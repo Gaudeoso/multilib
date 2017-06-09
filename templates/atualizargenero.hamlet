@@ -1,0 +1,17 @@
+    <body>
+        <div class="header">
+            <div class="itens_menu esq">
+                <a href=@{HomeR} class="bege negrito"><p>Cadê o Livro?</p></a>
+                
+            <div class="itens_menu dir">
+                <a href=@{LogoutR} class="menu branco">Logout</a>
+        <div id="home_top">
+            <img src=@{StaticR _Logo_png}>
+        <div class="welcome_msg">
+            <p class="txtcorrido">Atualizar Gênero</p>
+            <p class="txtcorrido">Preencha as informações abaixo para que o cadastro do gênero seja alterado</p>
+        <div class="divcinza">
+            <div class="content_area">
+                <form method=post enctype=#{enctype} action=@{UpdateGeneroR $ aid}>
+                     ^{widget}
+                     <input type="submit" value="Enviar">

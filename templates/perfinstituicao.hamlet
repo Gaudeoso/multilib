@@ -1,0 +1,24 @@
+    <body>
+        <div class="header">
+            <div class="itens_menu esq">
+                <a href=@{HomeR} class="bege negrito"><p>Cadê o Livro?</p></a>
+            <div class="itens_menu dir">
+                <a href=@{LogoutR} class="menu branco">Logout</a>
+        <div id="home_top">
+            <img src=@{StaticR _Logo_png}>
+        <div class="welcome_msg">
+            <p class="txtcorrido">Parabéns! Instituição cadastrada com sucesso.</p>
+            <p class="txtcorrido">Esses são os dados cadastrados:</p>
+        <div class="divcinza">
+            <table .informacoes cellspacing="0" cellpadding="0">
+                <tr>
+                    <th>Nome</th>
+                    <th>Cnpj</th>
+                    <th>Endereço</th>
+                    <th>Telefone</th>
+                <tr>
+                        <td>#{instituicaoNome instituicao}</td>
+                        <td>#{instituicaoCnpj instituicao}</td>
+                        <td>#{instituicaoEndereco instituicao}</td>
+                        <td>#{instituicaoTelefone instituicao}</td>
+            <a href=@{InicioR}><p class="btn_direcoes">Voltar para a página inicial</p></a>
